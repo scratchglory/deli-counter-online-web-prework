@@ -29,7 +29,7 @@ end
 #   should serve the first person in line and remove them form the queue
 def now_serving(line)
   if line.length >= 1 
-    puts "Currently serving #{line}."
+    puts "Currently serving #{line.first}."
     line.shift
   else
     puts "There is nobody waiting to be served!"
